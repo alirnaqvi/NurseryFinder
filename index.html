@@ -22,6 +22,7 @@
         h1 {
             color: #1b5e20;
             margin-bottom: 20px;
+            font-size: 2em;
         }
         form {
             background-color: white;
@@ -30,7 +31,8 @@
             padding: 20px;
             display: inline-block;
             max-width: 400px;
-            width: 100%;
+            width: 90%;
+            box-sizing: border-box;
         }
         label {
             display: block;
@@ -40,12 +42,13 @@
             color: #1b5e20;
         }
         input {
-            width: calc(100% - 16px);
+            width: 100%;
             padding: 8px;
             margin-top: 5px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         button {
             padding: 10px 20px;
@@ -55,6 +58,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
         button:hover {
             background-color: #388e3c;
@@ -85,6 +89,19 @@
             font-size: 10px;
             color: #2e7d32;
             margin: 5px 0 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+            button {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
